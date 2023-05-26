@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Servidor Web Embebido</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/icono_index.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+      <!-- Navbar Start -->
+      <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+          <h1 class="display-4 text-white text-uppercase m-0">TT-II SMPMEI</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav ml-auto py-0">
+            <a href="#home" class="nav-item nav-link active">Inicio</a>
+            <a href="#abstract" class="nav-item nav-link">Sobre el TT</a>
+            <a href="#herramientas" class="nav-item nav-link">Herramientas</a>
+          </div>
+          <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
+            <h1 class="display-4 text-white text-uppercase m-0">TT-II SMPMEI</h1>
+          </a>
+          <div class="navbar-nav mr-auto py-0">
+            <a href="#team" class="nav-item nav-link">Equipo</a>
+            <a href="#graphs" class="nav-item nav-link">Gráficas</a>
+            <a href="#contact" class="nav-item nav-link">Contacto</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+
+      <!-- Carrusel Inicio -->
+      <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+              <img class="position-absolute w-100 h-100" src="img/car_1.jpg" style="object-fit: cover;">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <div class="p-3" style="max-width: 900px;">
+                  <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Sistema de Monitoreo de Parámetros en</h4>
+                  <h3 class="display-2 font-secondary text-white text-uppercase mb-4">Microrredes Eléctricas</h3>
+                  <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">mediante IoT</h4>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+              <img class="position-absolute w-100 h-100" src="img/car_2.jpg" style="object-fit: cover;">
+              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <div class="p-3" style="max-width: 900px;">
+                  <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Instituto Politécnico Nacional</h4>
+                  <h3 class="display-2 font-secondary text-white mb-4">Escuela Superior de Cómputo</h3>
+                  <h3 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">TT-II</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+              <span class="carousel-control-prev-icon mt-3"></span>
+            </div>
+          </a>
+          <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+              <span class="carousel-control-next-icon mt-3"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Carrusel Fin -->
+
+
+      <!-- Sobre el TT Inicio-->
+      <div class="container-fluid py-5" id="abstract"> <!--Sobre el TT -->
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <img class="img-fluid mb-4 mb-lg-0" src="img/acercaTT.jpg" alt="">
+            </div>
+            <div class="col-lg-7">
+              <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Sobre el TT</h6>
+              <h1 class="display-4 mb-3"><span class="text-primary">Desarrollo de un prototipo </span>de sistema embebido</h1>
+              <p>Para el monitoreo de parámetros en microrredes eléctricas utilizando el concepto de IoT, con la finalidad de gestionar
+                de una manera más eficiente la energía fotovoltaica proporcionada por un panel solar.
+                Los parámetros a monitorear de la microrred son corriente y voltaje, mediante un sensor especializado,
+                el cual es configurado mediante un sistema en chip (SoC) y enviados a un servidor implementado en un sistema embebido.
+                El servidor permitie la consulta de los datos enviados de la microrred </p>
+              <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#abstractModalLong">Abstract</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sobre el TT Fin -->
+
+
+      <!-- Herramientas Inicio -->
+      <div class="container-fluid py-5" id="herramientas">
+        <div class="container py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Herramientas</h6>
+            <h1 class="font-secondary display-4">Lo que ofrecemos</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-3">
+              <div class="product-item mb-2">
+                <div class="product-img">
+                  <img class="img-fluid" src="img/monitor.jpg" alt="">
+                  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#monitorModalLong">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                  </a>
+                </div>
+                <div class="bg-secondary text-center p-4">
+                  <h3 class="m-0">Monitoreo en tiempo real</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="product-item mb-2">
+                <div class="product-img">
+                  <img class="img-fluid" src="img/reportes.jpg" alt="">
+                  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#reportesModalLong">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                  </a>
+                </div>
+                <div class="bg-secondary text-center p-4">
+                  <h3 class="m-0">Reportes Históricos</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+              <div class="product-item mb-2">
+                <div class="product-img">
+                  <img class="img-fluid" src="img/noti.jpg" alt="">
+                  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#notiModalLong">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                  </a>
+                </div>
+                <div class="bg-secondary text-center p-4">
+                  <h3 class="m-0">Notificaciones</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Herramientas Fin -->
+
+
+      <!-- Team Start -->
+      <div class="container-fluid py-5" id="team">
+        <div class="container py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Equipo</h6>
+            <h1 class="font-secondary display-4">Conoce al equipo</h1>
+          </div>
+          <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+              <div class="row m-0">
+                <div class="col-sm-6 p-0 text-center">
+                  <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                    <h5 class="mb-2">Daniela Pali</h5>
+                    <p class="text-muted font-italic mb-2">Futura Ingenieria</p>
+                    <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem</p>
+                    <div class="position-relative mb-2">
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 p-0" style="min-height: 300px;">
+                  <img class="position-absolute w-100 h-100" src="img/dani.png" style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+              <div class="row m-0">
+                <div class="col-sm-6 p-0" style="min-height: 300px;">
+                  <img class="position-absolute w-100 h-100" src="img/ema.png" style="object-fit: cover;">
+                </div>
+                <div class="col-sm-6 p-0 text-center">
+                  <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                    <h5 class="mb-2">Emanuel Rodríguez</h5>
+                    <p class="text-muted font-italic mb-2">Futuro Ingeniero</p>
+                    <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem</p>
+                    <div class="position-relative mb-2">
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+              <div class="row m-0">
+                <div class="col-sm-6 p-0 text-center">
+                  <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                    <h5 class="mb-2">Angeles Tapia</h5>
+                    <p class="text-muted font-italic mb-2">Futura Ingeniera</p>
+                    <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem</p>
+                    <div class="position-relative mb-2">
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 p-0" style="min-height: 300px;">
+                  <img class="position-absolute w-100 h-100" src="img/angy.png" style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Equipo Fin-->
+
+
+      <!--Gráficas Inicio-->
+      <div class="container-fluid py-5" id="graphs"> <!--faqs -->
+        <div class="container py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gráficas</h6>
+            <h1 class="display-4">Lo que deberías saber</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6 border-right border-primary">
+              <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                <h3 class="mb-4">Corriente</h3>
+                  <!-- Agrega tu canvas aquí -->
+                  <canvas id="currentChart" width="600" height="400"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-center text-md-left ml-md-3">
+                <h3 class="mb-4">Voltaje</h3>
+                  <!-- Agrega tu canvas aquí -->
+                  <canvas id="voltageChart" width="600" height="400"></canvas>
+              </div>
+            </div>
+            <div class="col-md-12 text-center pt-3">
+              <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Cómprame un café</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gráficas Fin-->
+
+
+      <!-- Contacto Inicio -->
+      <div class="container-fluid py-5" id="contact">
+        <div class="container py-5">
+          <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contacto</h6>
+            <h1 class="font-secondary display-4">Mantenerse en contacto</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="contact-form">
+                <div id="success"></div>
+                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                  <div class="form-row">
+                    <div class="col-sm-6 control-group">
+                      <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="name" placeholder="Nombre" required="required" data-validation-required-message="Por favor, ingrese su nombre" />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="col-sm-6 control-group">
+                      <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="Email" required="required" data-validation-required-message="Por favor, ingrese su email" />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Por favor, ingrese un asunto />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                    <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor, ingrese su mensaje"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Enviar mensaje</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contacto Fin-->
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+          <div class="col-12 mb-4 px-4">
+            <div class="row mb-5 p-4" style="background: rgba(256, 256, 256, .05);">
+              <div class="col-md-4">
+                <div class="text-md-center">
+                  <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Nuestra Escuela</h5>
+                  <p class="mb-4 m-md-0">ESCOM, IPN</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-md-center">
+                  <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Nuestro Correo</h5>
+                  <p class="mb-4 m-md-0">correo_tt2@email.com</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-md-center">
+                  <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Apóyanos</h5>
+                  <p class="m-0">Por un mundo más sustentable</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .05) !important;">
+        <p class="m-0 text-white">&copy; <a href="index.html">SMPMEI</a>. Software Libre</p>
+      </div>
+      <!-- Footer End -->
+
+
+      <!-- Resumen en Inglés -->
+      <div class="modal fade" id="abstractModalLong" tabindex="-1" role="dialog" aria-labelledby="abstractModalLongTitle"
+           aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="abstractModalLongTitle">Development of an embedded system prototype</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid mb-4" src="img/car_1.jpg" alt="">
+              <p>For the monitoring of parameters in electrical microgrids using the IoT concept,
+                in order to more efficiently manage the photovoltaic energy provided by a solar panel. The microgrid parameters
+                to be monitored are current and voltage, through a specialized sensor, which is configured through a system on chip (SoC)
+                and sent to a server implemented in an embedded system. The server allows the consultation of the data sent from the microgrid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Resumen en Inglés  -->
+
+      <!-- Monitor Inicio -->
+      <div class="modal fade" id="monitorModalLong" tabindex="-1" role="dialog" aria-labelledby="monitorModalLongTitle"
+           aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="monitorModalLongTitle">Monitor En Tiempo Real</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor.
+                Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet
+                nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Monitor Fin  -->
+
+      <!-- Reportes Inicio -->
+      <div class="modal fade" id="reportesModalLong" tabindex="-1" role="dialog" aria-labelledby="monitorModalLongTitle"
+           aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reportesModalLongTitle">Reportes Históricos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor.
+                Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet
+                nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Reportes Fin  -->
+
+      <!-- Notificaciones Inicio -->
+      <div class="modal fade" id="notiModalLong" tabindex="-1" role="dialog" aria-labelledby="monitorModalLongTitle"
+           aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="notiModalLongTitle">Notificaciones</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor.
+                Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet
+                nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Notificaciones Fin  -->
+
+      <!-- Modal Inicio >
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+           aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Solar Energy System</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+              <p>Sit eos diam rebum amet stet sit lorem invidunt, kasd dolor ea dolores ut nonumy, sea est rebum dolore dolor. Lorem tempor tempor gubergren dolor dolor dolor. Kasd amet labore voluptua justo diam, dolore accusam duo est stet nonumy tempor dolores sadipscing duo. Stet at et nonumy erat et sed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      < Modal Fin -->
+
+
+      <!-- Scroll to Bottom -->
+      <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+      <!-- JavaScript Libraries -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/isotope/isotope.pkgd.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+      <!-- Contact Javascript File -->
+      <script src="mail/jqBootstrapValidation.min.js"></script>
+      <script src="mail/contact.js"></script>
+
+      <!-- Template Javascript -->
+      <!--script src="js/main.js"></script-->
+
+      <script type="module" src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </body>
+
+</html>
